@@ -8,7 +8,11 @@ class ComicService
 {
     public static function getUrlToRequest($comicId = null)
     {
-        return empty($comicId) ? 'https://xkcd.com/info.0.json' : 'https://xkcd.com/'.$comicId.'/info.0.json';
+        $endPoint = 'https://xkcd.com/info.0.json';
+        if(!empty($comicId) || $comicId == 0){
+            $endPoint = 'https://xkcd.com/'.$comicId.'/info.0.json';
+        }
+        return $endPoint;
     }
 
     public static function get($comicId = null)

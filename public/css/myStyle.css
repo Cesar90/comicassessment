@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
 body{
     background: #96A8C8;
 }
-.box {
+.littleBox {
     background: white;
     border-style: solid;
     border-width: 1.5px;
@@ -13,6 +15,14 @@ body{
 .littleSpaceTopBottom{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.customBangersFont{
+    font-family: 'Bangers', cursive !important;
+}
+
+.font18px{
+    font-size: 18px !important;
 }
 
 /*==========  Mobile First Method  ==========*/
